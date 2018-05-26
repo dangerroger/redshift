@@ -11,8 +11,8 @@ var handlebars = require('express-handlebars');
 // and documentation.
 
 keystone.init({
-	'name': 'Keystone_blog',
-	'brand': 'Keystone_blog',
+	'name': 'Redshift Healthcare',
+	'brand': 'RedShift',
 
 	'less': 'public',
 	'static': 'public',
@@ -56,7 +56,7 @@ keystone.set('routes', require('./routes'));
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
 	posts: ['posts', 'post-categories'],
-	galleries: 'galleries',
+	//galleries: 'galleries',
 	enquiries: 'enquiries',
 	users: 'users',
 });
