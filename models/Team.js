@@ -8,9 +8,10 @@ var Team = new keystone.List('Team');
 // define list types for model
 
 Team.add ({
-    image: { type: Types.CloudinaryImage },
-    name: { type: Types.Name, required: true},
-  	email: { type: Types.Email},
+
+    image:{ type: Types.CloudinaryImage },
+    name:{ type: Types.Name, required: true},
+  	email:{ type: Types.Email},
     about:{type:String}
   });
 

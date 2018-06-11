@@ -8,7 +8,13 @@ var view = new keystone.View(req, res);
 locals.section = 'team';
 // load Team
 
-view.query('Team',keystone.list('Team').model.find());
+view.query('teams',keystone.list('Team').model.find(
+
+));
+
+
+
+
 
 //Render team page
 
