@@ -11,17 +11,20 @@
 		<p> {{email}} </p>
 		<p>{{about}}</p>
 
-		<div class="row gallery-images">
-				{{#if team.image}}
-				<div class="col-sm-4 col-md-4 gallery-image">
-					<img src="{{cloudinaryUrl teams.image width='680' height='680'}}" class="img-rounded">
+		<div class="team-images">
+
+			{{#if image}}<img src="{{{cloudinaryUrl image width=400 height=250 crop='fit' }}}" class="img-responsive">{{/if}}
+
+				{{#if team.images}}
+				<div class="col-sm-4 col-md-4 team-image">
+					<img src="{{cloudinaryUrl image width='680' height='680'}}" class="img-rounded">
 				</div>
 				{{/if}}
 				<div class="col-sm-8 col-md-8">
 					<div class="row">
 						{{#each images}}
 						<div class="col-xs-4 col-sm-4 col-md-3 gallery-image">
-							<img src="{{cloudinaryUrl teams.image width='300' height='300'}}" class="img-rounded">
+							<img src="{{cloudinaryUrl image width='300' height='300'}}" class="img-rounded">
 						</div>
 						{{/each}}
 					</div>
